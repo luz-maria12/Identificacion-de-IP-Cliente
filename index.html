@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de la IP del Cliente</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .table-header {
+            background-color: #FF69B4; /* Color rosa para el encabezado */
+            color: white;
+        }
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: #B0E0E6; /* Fondo celeste para filas impares */
+        }
+        .table-striped tbody tr:nth-of-type(even) {
+            background-color: #E6E6FA; /* Fondo lavanda para filas pares */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Información de la IP del Cliente</h1>
+
+        <table class="table table-striped mt-4">
+            <thead class="table-header">
+                <tr>
+                    <th scope="col">IP</th>
+                    <th scope="col">País</th>
+                    <th scope="col">Continente</th>
+                    <th scope="col">Zona Horaria</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Fila de ejemplo 1 -->
+                <tr>
+                    <td>192.168.1.1</td>
+                    <td>España</td>
+                    <td>Europa</td>
+                    <td>UTC+1</td>
+                </tr>
+                <!-- Fila de ejemplo 2 -->
+                <tr>
+                    <td>172.16.0.1</td>
+                    <td>México</td>
+                    <td>América del Norte</td>
+                    <td>UTC-6</td>
+                </tr>
+                <!-- Agrega más filas según sea necesario -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Bootstrap JS y Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
