@@ -1,58 +1,73 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Información de la IP del Cliente</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .table-header {
-            background-color: #FF69B4; /* Color rosa para el encabezado */
-            color: white;
-        }
-        .table-striped tbody tr:nth-of-type(odd) {
-            background-color: #B0E0E6; /* Fondo celeste para filas impares */
-        }
-        .table-striped tbody tr:nth-of-type(even) {
-            background-color: #E6E6FA; /* Fondo lavanda para filas pares */
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Información de la IP del Cliente</title>
+  <!-- Enlace a los estilos de Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .container {
+      margin-top: 50px;
+    }
+
+    .table th, .table td {
+      text-align: center;
+    }
+
+    .table th {
+      background-color: black;
+      color: white;
+    }
+
+    .table-striped tbody tr:nth-of-type(odd) {
+      background-color: #f2f2f2;
+    }
+  </style>
 </head>
 <body>
-    <div class="container mt-5">
-        <h1 class="text-center">Información de la IP del Cliente</h1>
 
-        <table class="table table-striped mt-4">
-            <thead class="table-header">
-                <tr>
-                    <th scope="col">IP</th>
-                    <th scope="col">País</th>
-                    <th scope="col">Continente</th>
-                    <th scope="col">Zona Horaria</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Fila de ejemplo 1 -->
-                <tr>
-                    <td>192.168.1.1</td>
-                    <td>España</td>
-                    <td>Europa</td>
-                    <td>UTC+1</td>
-                </tr>
-                <!-- Fila de ejemplo 2 -->
-                <tr>
-                    <td>172.16.0.1</td>
-                    <td>México</td>
-                    <td>América del Norte</td>
-                    <td>UTC-6</td>
-                </tr>
-                <!-- Agrega más filas según sea necesario -->
-            </tbody>
-        </table>
-    </div>
+<div class="container">
+  <h1 class="text-center">Información de la IP del Cliente</h1>
 
-    <!-- Bootstrap JS y Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <table class="table table-striped mt-4">
+    <thead>
+      <tr>
+        <th>IP</th>
+        <th>País</th>
+        <th>Continente</th>
+        <th>Zona Horaria</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="ip">192.168.0.1</td>
+        <td id="pais">Estados Unidos</td>
+        <td id="continente">América del Norte</td>
+        <td id="zona_horaria">UTC-5:00</td>
+      </tr>
+      
+      <!-- Agrega más filas de datos de muestra según sea necesario -->
+    </tbody>
+  </table>
+</div>
+
+<!-- Enlaces a los scripts de Bootstrap y jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script src="js/main.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+
+
 </body>
 </html>
